@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 222 30% 11%;
+    --card: 0 0% 100%;
+    --muted: 40 12% 94%;
+    --muted-foreground: 222 10% 40%;
+    --border: 40 10% 86%;
+    --primary: 224 64% 33%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 224 64% 40%;
+    --destructive: 0 70% 42%;
+    --risk-safe: 152 55% 30%;
+    --risk-suspicious: 36 90% 38%;
+    --risk-high: 4 72% 44%;
+  }
+
+  .dark {
+    --background: 222 28% 8%;
+    --foreground: 40 15% 94%;
+    --card: 222 26% 11%;
+    --muted: 222 20% 15%;
+    --muted-foreground: 222 10% 65%;
+    --border: 222 16% 20%;
+    --primary: 220 80% 72%;
+    --primary-foreground: 222 30% 10%;
+    --ring: 220 80% 72%;
+    --destructive: 0 70% 60%;
+    --risk-safe: 152 50% 52%;
+    --risk-suspicious: 38 90% 58%;
+    --risk-high: 4 80% 64%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      Arial, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

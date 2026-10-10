@@ -1,0 +1,13 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+SQLAlchemy==2.0.36
+psycopg[binary]==3.2.3
+alembic==1.14.0
+pydantic[email]==2.10.4
+pydantic-settings==2.7.0
+PyJWT==2.10.1
+bcrypt==4.2.1
+python-multipart==0.0.20
+pytest==8.3.4
+httpx==0.28.1
+tldextract==5.1.3
